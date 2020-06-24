@@ -1,0 +1,30 @@
+# Email of the Let's Encrypt account.
+export CERT_EMAIL=foobar@example.com
+
+# domain of the certificate
+export CERT_DOMAINS=example.com
+
+# the webroot of the Let's Encrypt
+export CERT_WEB_ROOT=
+
+# the output path of the certificate
+export CERT_PATH=
+
+# Docker api host name
+export API_DOCKER_HOST_NAME=api
+
+# backend api port
+export API_PORT=3333
+
+# backend api port accessible from host
+export API_PORT_HOST=3333
+
+# frontend (Next.js) port accessible from host machine.
+export FRONT_PORT_HOST=3000
+
+# next.js backend api endpoint requested in Next.js Clientside.
+export FRONT_API_ENDPOINT_CLIENT=http://localhost:3333
+
+# next.js backend api endpoint requested in Next.js Serverside.
+# It can be same with FRONT_API_ENDPOINT_CLIENT when deploying to production.
+export FRONT_API_ENDPOINT_SERVER=http://api:3333
