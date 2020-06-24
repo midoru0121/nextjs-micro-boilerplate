@@ -1,0 +1,1 @@
+until `nc -z $API_DOCKER_HOST_NAME $API_PORT`; do echo "waiting api..."; sleep 5; done

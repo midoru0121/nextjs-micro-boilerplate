@@ -1,0 +1,36 @@
+version: "3"
+services:
+  api:
+    container_name: next-micro-api
+    volumes:
+      - ./api:/api
+    working_dir: /api
+    image: node:12.16.1-alpine3.9
+    command: sh -c "yarn && yarn dev"
+    ports:
+      - "${API_PORT_HOST}:${API_PORT}"
+    tty: true
+    stdin_open: true
+    environment:
+      - API_PORT=${API_PORT}
+  front:
+    container_name: next-micro-front
+    volumes:
+      - ./front:/front
+      - empty-volume-next:/front/.next
+    working_dir: /front
+    image: node:12.16.1-alpine3.9
+    command: sh -c "sh ./docker-compose.wait.api.sh && yarn && yarn dev"
+    ports:
+      - "${FRONT_PORT_HOST}:3000"
+    tty: true
+    stdin_open: true
+    environment:
+      - API_DOCKER_HOST_NAME=${API_DOCKER_HOST_NAME}
+      - API_PORT=${API_PORT}
+      - FRONT_API_ENDPOINT_CLIENT=${FRONT_API_ENDPOINT_CLIENT}
+      - FRONT_API_ENDPOINT_SERVER=${FRONT_API_ENDPOINT_SERVER}
+    depends_on:
+      - api
+volumes:
+  empty-volume-next:
