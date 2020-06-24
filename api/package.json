@@ -1,0 +1,22 @@
+{
+  "name": "nextjs_micro_boilerplate",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pm2": "^4.4.0",
+    "ts-node": "^8.10.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.9.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node": "^14.0.9",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "nodemon",
+    "pm2:start": "pm2 start ts-node -- -P tsconfig.json -r tsconfig-paths/register ./src/index.ts",
+    "pm2:log": "pm2 log"
+  },
+  "license": "MIT",
+  "private": true
+}

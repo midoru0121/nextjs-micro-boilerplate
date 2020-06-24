@@ -1,0 +1,9 @@
+{
+  "verbose": true,
+  "debug": false,
+  "watch": ["src"],
+  "ext": "ts",
+  "ignore": ["tests/**/*.ts", "migrations/**/*.js"],
+  "exec": "ts-node -r tsconfig-paths/register ./src/index.ts",
+  "inspect": true
+}
