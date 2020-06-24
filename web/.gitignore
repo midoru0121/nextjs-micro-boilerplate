@@ -1,0 +1,3 @@
+cert/accounts/
+cert/certificates/
+conf.d/*.conf

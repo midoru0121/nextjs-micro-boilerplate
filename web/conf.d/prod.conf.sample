@@ -1,0 +1,41 @@
+server {
+  listen       80;
+  server_name  example.com;
+  return 301 https://$host$request_uri;
+
+  location ^~ /.well-known/acme-challenge/ {
+    root /usr/share/nginx/html;
+  }
+}
+
+server {
+  listen       80;
+  server_name  backend.example.com;
+  return 301 https://$host$request_uri;
+
+  location ^~ /.well-known/acme-challenge/ {
+    root /usr/share/nginx/html;
+  }
+}
+
+server {
+  listen       443 ssl http2;
+  server_name  example.com;
+  ssl_certificate /etc/nginx/cert/certificates/example.com.crt;
+  ssl_certificate_key /etc/nginx/cert/certificates/example.com.key;
+
+  location / {
+    proxy_pass http://front:3000;
+  }
+}
+
+server {
+  listen       443 ssl http2;
+  server_name  backend.example.com;
+  ssl_certificate /etc/nginx/cert/certificates/example.com.crt;
+  ssl_certificate_key /etc/nginx/cert/certificates/example.com.key;
+
+  location / {
+    proxy_pass http://api:3333;
+  }
+}
