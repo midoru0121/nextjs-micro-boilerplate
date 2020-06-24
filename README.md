@@ -16,19 +16,19 @@ All application code is written with TypeScript.
 
 ## Local Development
 
-Define and load Environment Variables. We recommend to load these variable with [direnv](https://github.com/direnv/direnv) .
+Define and load Environment Variables. [direnv](https://github.com/direnv/direnv) is highly recommended to load variables.
 
 ```bash
-# Email of the Let's Encrypt account.
+# Email of the Let's Encrypt account (production only)
 export CERT_EMAIL=
 
-# domain of the certificate
+# domain of the certificate (production only)
 export CERT_DOMAINS=
 
-# the webroot of the Let's Encrypt
+# the webroot of the Let's Encrypt (production only)
 export CERT_WEB_ROOT=
 
-# the output path of the certificate
+# the output path of the certificate (production only)
 export CERT_PATH=
 
 # Docker api host name
@@ -58,4 +58,23 @@ docker-compose -f docker-compose.dev.yml up
 ```bash
 open http://localhost:3000
 ```
+
+## Deploy Guide to Amazon Lightsail
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
