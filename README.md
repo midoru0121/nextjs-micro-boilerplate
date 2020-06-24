@@ -90,6 +90,7 @@ For more detail [Github Docs](https://developer.github.com/v3/guides/managing-de
 ### Install Docker 
 
 ```bash
+sudo yum update -y
 sudo yum install -y docker
 sudo service docker start
 sudo usermod -a -G docker ec2-user
@@ -158,7 +159,6 @@ sudo chown root:root /usr/local/bin/lego
 ### Install Git
 
 ```bash
-sudo yum update -y
 sudo yum install git -y
 ```
 
