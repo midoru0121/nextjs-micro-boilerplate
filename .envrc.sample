@@ -2,7 +2,7 @@
 export CERT_EMAIL=foobar@example.com
 
 # domain of the certificate
-export CERT_DOMAINS=example.com
+export CERT_DOMAIN=example.com
 
 # the webroot of the Let's Encrypt
 export CERT_WEB_ROOT=
