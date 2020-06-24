@@ -13,7 +13,7 @@ server {
 server {
   listen       80;
 
-  # Change "api.example.com" to your subdomain name
+  # Change "api.example.com" to your subdomain name, ex "api.yourdomain.com"
   server_name  api.example.com;
   return 301 https://$host$request_uri;
 
@@ -25,7 +25,7 @@ server {
 server {
   listen       443 ssl http2;
 
-  # Change "example.com" to your domain name
+  # Change "example.com" to your domain name, ex "api.yourdomain.com"
   server_name  example.com;
 
   # Change "example.com" to your domain name in certificate path below.
