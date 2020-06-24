@@ -4,19 +4,13 @@ Minimum Application Stack with which you can develop and deploy next.js applicat
 
 This repogitory is a set of three templates provided with the following docker containers:
 
+* Nginx (Web server enables HTTPS with by using Let's Encrypt)
 * Next.js (Serverside Renderable React Frontend) 
 * Node.js (Backend Application provides data for Next.js)
-* Nginx (Web server enables HTTPS with by using Let's Encrypt)
 
 
 ![Overview](https://user-images.githubusercontent.com/3450879/85508415-fb5abc80-b62e-11ea-9c40-b38a81141e44.jpg)
 
-
-And this stack containing th following instruction:
-
-* How to develop Next.js application locally.
-* How to condigure Nginx with Let's Encrypt by using go-acme/lego
-* How to deploy the stack on Amazon Linux in Amazon Lightsail.
 
 All application code is written with TypeScript.
 
