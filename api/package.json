@@ -3,7 +3,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "pm2": "^4.4.1",
-    "ts-node": "^8.10.2",
+    "ts-node": "^9.0.0",
     "tsconfig-paths": "^3.9.0",
     "typescript": "^3.9.7"
   },
