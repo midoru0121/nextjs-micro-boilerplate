@@ -1241,10 +1241,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.4.tgz#38fd73ddfd9b55abb1e1b2ed578cb55bd7b7d339"
   integrity sha512-8+KAKzEvSUdeo+kmqnKrqgeE+LcA0tjYWFY7RPProVYwnqDjukzO+3b6dLD56rYX5TdWejnEOLJYOIeh4CXKuA==
 
-"@types/node@^14.14.10":
-  version "14.14.10"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.10.tgz#5958a82e41863cfc71f2307b3748e3491ba03785"
-  integrity sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
+"@types/node@^14.14.15":
+  version "14.14.15"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.15.tgz#9a3e7cd4a2dc90d0ad0fb9d8ee0fdb57088ff793"
+  integrity sha512-BPnZFSU+n+48jF8Z4cPaI0P2uH83EgsrzCsvs8vRZOqtVWllBlCxwiOLg/+uzV5MtLwouHYuVSIzdpF6/0MBfw==
 
 "@types/prop-types@*":
   version "15.7.3"
