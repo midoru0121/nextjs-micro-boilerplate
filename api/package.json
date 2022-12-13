@@ -1,7 +1,7 @@
 {
   "name": "nextjs_micro_boilerplate",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "pm2": "^4.4.1",
     "ts-node": "^8.10.2",
     "tsconfig-paths": "^3.9.0",
